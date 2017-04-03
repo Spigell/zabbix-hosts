@@ -1,16 +1,25 @@
 # SYNOPSIS
 
-Extract IP and hostnames from zabbix server
+Extract IP and hostnames from zabbix server. 
+
+Tested on zabbix 3.2
 
 # INSTALL
 
     $ sparrow plg install zabbix-hosts
 
+## Dependencies
+    
+[pyzabbix](https://github.com/lukecyca/pyzabbix)
+
 # USAGE
 
 ## Manually
 
-    $ sparrow plg run zabbix-hosts --param user=foo --param password=bar --param host=127.0.0.1
+    $ sparrow plg run zabbix-hosts --param user=foo --param password=bar --param host=127.0.0.1 --param output=/tmp/test.txt
+    $ cat /tmp/test.txt
+    127.0.0.1 zabbix-server
+    192.168.0.1 fe.example.com
 
 # Parameters
 
