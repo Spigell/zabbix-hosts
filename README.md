@@ -2,7 +2,7 @@
 
 Extract IP and hostnames from zabbix server. 
 
-Tested on zabbix 3.2
+Tested on zabbix version >= 3.2
 
 # INSTALL
 
@@ -38,4 +38,3 @@ IP or dns name of zabbix server. Obligatory.
 ## output 
 
 Default is `stdout`. If any other specified output will be in file.
-
