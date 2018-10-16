@@ -1,5 +1,7 @@
 # SYNOPSIS
 
+Example of a python Outthentic plugin
+
 Extract IP and hostnames from zabbix server. 
 
 Tested on zabbix version >= 3.2
@@ -17,6 +19,7 @@ Tested on zabbix version >= 3.2
 ## Manually
 
     $ sparrow plg run zabbix-hosts --param user=foo --param password=bar --param host=127.0.0.1 --param output=/tmp/test.txt
+
     $ cat /tmp/test.txt
     127.0.0.1 zabbix-server
     192.168.0.1 fe.example.com
@@ -37,4 +40,11 @@ IP or dns name of zabbix server. Obligatory.
 
 ## output 
 
-Default is `stdout`. If any other specified output will be in file.
+Default is `stdout`. If any other specified output will be in a file.
+
+# See also
+
+[outthentic](https://github.com/melezhik/outthentic)
+
+[sparrow](https://github.com/melezhik/sparrow)
+
